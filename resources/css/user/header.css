@@ -1,0 +1,111 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Khoảng cách giữa các nút */
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 6rem;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+
+.nav-links a button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.navbar-right {
+    position: relative;
+}
+
+.account-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+
+.account-btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.sub-menu li {
+    padding: 8px 10px;
+    width: 110px;
+}
+
+.sub-menu a button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    width: 100%;
+    text-align: left;
+}
+
+.sub-menu a button:hover {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.account-menu:hover .sub-menu {
+    display: block;
+}
